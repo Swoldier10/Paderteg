@@ -1,0 +1,71 @@
+<?php
+
+return [
+    // Navigation
+    'Home' => 'Startseite',
+    'About' => 'Über uns',
+    'Products' => 'Produkte',
+    'Resources' => 'Ressourcen',
+    'Contact' => 'Kontakt',
+    'Language' => 'Sprache',
+    'Navigation' => 'Navigation',
+
+    // Product Categories
+    'All Products' => 'Alle Produkte',
+    'Online Stores' => 'Online-Shops',
+    'Segmentation' => 'Segmentierung',
+    'Marketing CRM' => 'Marketing CRM',
+    'Featured Products' => 'Ausgewählte Produkte',
+    'Browse All' => 'Alle anzeigen',
+    'View Products' => 'Produkte anzeigen',
+    'Request Custom Quote' => 'Individuelles Angebot anfordern',
+    'Automotive' => 'Automobilindustrie',
+    'Medical' => 'Medizin',
+    'Industrial' => 'Industrie',
+    'Health Care' => 'Gesundheitswesen',
+    'Energy & Environmental' => 'Energie & Umwelt',
+    'Precision cable solutions for automotive applications and vehicle systems.' => 'Präzisionskabellösungen für Automobilanwendungen und Fahrzeugsysteme.',
+    'Robust cabling solutions for industrial machinery and manufacturing equipment.' => 'Robuste Verkabelungslösungen für Industriemaschinen und Fertigungsanlagen.',
+    'Specialized medical-grade cabling for healthcare devices and equipment.' => 'Spezialisierte medizinische Verkabelung für Gesundheitsgeräte und Medizintechnik.',
+    'Solutions for renewable energy systems and environmental monitoring equipment.' => 'Lösungen für erneuerbare Energiesysteme und Umweltüberwachungsgeräte.',
+
+    // Resources
+    'Certificates' => 'Zertifikate',
+    'Machines' => 'Maschinen',
+    'Documentation' => 'Dokumentation',
+    'Case Studies' => 'Fallstudien',
+    'View Certificates' => 'Zertifikate anzeigen',
+    'View Machines' => 'Maschinen anzeigen',
+    'View Documentation' => 'Dokumentation anzeigen',
+    'View Case Studies' => 'Fallstudien anzeigen',
+    'About Our Company' => 'Über unser Unternehmen',
+    'Contact Us' => 'Kontaktieren Sie uns',
+
+    // Footer
+    'Connect with third-party tools that you\'re already using.' => 'Verbinden Sie sich mit Drittanbieter-Tools, die Sie bereits verwenden.',
+    'View our complete catalog of cable assembly solutions.' => 'Sehen Sie unseren vollständigen Katalog an Kabelmontage-Lösungen.',
+    'View our quality certifications and compliance documentation.' => 'Sehen Sie unsere Qualitätszertifizierungen und Compliance-Dokumentation.',
+    'Explore our state-of-the-art manufacturing equipment.' => 'Entdecken Sie unsere hochmoderne Fertigungsausrüstung.',
+    'Technical documents, datasheets, and user manuals.' => 'Technische Dokumente, Datenblätter und Benutzerhandbücher.',
+    'Success stories and real-world applications of our solutions.' => 'Erfolgsgeschichten und praxisnahe Anwendungen unserer Lösungen.',
+    'Innovative cable assembly and system technology solutions for automotive, medical, and industrial applications.' => 'Innovative Kabelmontage- und Systemtechnologielösungen für Automobil-, Medizin- und Industrieanwendungen.',
+    'Lösungen, die verbinden' => 'Lösungen, die verbinden',
+    'Copșa Mică, Romania' => 'Copșa Mică, Rumänien',
+    'All rights reserved.' => 'Alle Rechte vorbehalten.',
+    'Privacy Policy' => 'Datenschutzrichtlinie',
+    'Terms of Service' => 'Nutzungsbedingungen',
+    'Cookies' => 'Cookies',
+    'About Us' => 'Über uns',
+
+    // Homepage
+    'Precision Cable Assembly' => 'Präzisions-Kabelmontage',
+    'Custom Solutions for Your Industry' => 'Individuelle Lösungen für Ihre Branche',
+    'Learn More' => 'Mehr erfahren',
+    'Get Started' => 'Jetzt starten',
+    'Why Choose Us' => 'Warum uns wählen',
+    'Industries Served' => 'Bediente Branchen',
+    'Our Certifications' => 'Unsere Zertifizierungen',
+    'Ready to Work With Us?' => 'Bereit, mit uns zu arbeiten?',
+    'Contact us today to discuss your custom cable assembly needs' => 'Kontaktieren Sie uns noch heute, um Ihre individuellen Kabelmontage-Anforderungen zu besprechen',
+    'Contact Now' => 'Jetzt kontaktieren',
+]; 

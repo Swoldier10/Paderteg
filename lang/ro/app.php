@@ -1,0 +1,71 @@
+<?php
+
+return [
+    // Navigation
+    'Home' => 'Acasă',
+    'About' => 'Despre',
+    'Products' => 'Produse',
+    'Resources' => 'Resurse',
+    'Contact' => 'Contact',
+    'Language' => 'Limbă',
+    'Navigation' => 'Navigare',
+
+    // Product Categories
+    'All Products' => 'Toate Produsele',
+    'Online Stores' => 'Magazine Online',
+    'Segmentation' => 'Segmentare',
+    'Marketing CRM' => 'Marketing CRM',
+    'Featured Products' => 'Produse Recomandate',
+    'Browse All' => 'Vizualizează Toate',
+    'View Products' => 'Vezi Produsele',
+    'Request Custom Quote' => 'Solicită o Ofertă Personalizată',
+    'Automotive' => 'Automotive',
+    'Medical' => 'Medical',
+    'Industrial' => 'Industrial',
+    'Health Care' => 'Sănătate',
+    'Energy & Environmental' => 'Energie & Mediu',
+    'Precision cable solutions for automotive applications and vehicle systems.' => 'Soluții de cabluri de precizie pentru aplicații auto și sisteme de vehicule.',
+    'Robust cabling solutions for industrial machinery and manufacturing equipment.' => 'Soluții robuste de cablare pentru utilaje industriale și echipamente de fabricație.',
+    'Specialized medical-grade cabling for healthcare devices and equipment.' => 'Cabluri specializate de calitate medicală pentru dispozitive și echipamente medicale.',
+    'Solutions for renewable energy systems and environmental monitoring equipment.' => 'Soluții pentru sisteme de energie regenerabilă și echipamente de monitorizare a mediului.',
+
+    // Resources
+    'Certificates' => 'Certificate',
+    'Machines' => 'Mașini',
+    'Documentation' => 'Documentație',
+    'Case Studies' => 'Studii de Caz',
+    'View Certificates' => 'Vezi Certificatele',
+    'View Machines' => 'Vezi Mașinile',
+    'View Documentation' => 'Vezi Documentația',
+    'View Case Studies' => 'Vezi Studiile de Caz',
+    'About Our Company' => 'Despre Compania Noastră',
+    'Contact Us' => 'Contactează-ne',
+
+    // Footer
+    'Connect with third-party tools that you\'re already using.' => 'Conectează-te cu instrumente terțe pe care le folosești deja.',
+    'View our complete catalog of cable assembly solutions.' => 'Vezi catalogul nostru complet de soluții pentru asamblarea cablurilor.',
+    'View our quality certifications and compliance documentation.' => 'Vezi certificările noastre de calitate și documentația de conformitate.',
+    'Explore our state-of-the-art manufacturing equipment.' => 'Explorează echipamentele noastre de fabricație de ultimă generație.',
+    'Technical documents, datasheets, and user manuals.' => 'Documente tehnice, fișe tehnice și manuale de utilizare.',
+    'Success stories and real-world applications of our solutions.' => 'Povești de succes și aplicații din lumea reală ale soluțiilor noastre.',
+    'Innovative cable assembly and system technology solutions for automotive, medical, and industrial applications.' => 'Soluții inovatoare de asamblare a cablurilor și tehnologie de sistem pentru aplicații auto, medicale și industriale.',
+    'Lösungen, die verbinden' => 'Soluții care conectează',
+    'Copșa Mică, Romania' => 'Copșa Mică, România',
+    'All rights reserved.' => 'Toate drepturile rezervate.',
+    'Privacy Policy' => 'Politica de Confidențialitate',
+    'Terms of Service' => 'Termeni și Condiții',
+    'Cookies' => 'Cookie-uri',
+    'About Us' => 'Despre Noi',
+
+    // Homepage
+    'Precision Cable Assembly' => 'Asamblare de Cabluri de Precizie',
+    'Custom Solutions for Your Industry' => 'Soluții Personalizate pentru Industria Ta',
+    'Learn More' => 'Află Mai Multe',
+    'Get Started' => 'Începe',
+    'Why Choose Us' => 'De Ce Să Ne Alegi',
+    'Industries Served' => 'Industrii Deservite',
+    'Our Certifications' => 'Certificările Noastre',
+    'Ready to Work With Us?' => 'Gata să Lucrezi cu Noi?',
+    'Contact us today to discuss your custom cable assembly needs' => 'Contactează-ne astăzi pentru a discuta despre nevoile tale de asamblare a cablurilor personalizate',
+    'Contact Now' => 'Contactează Acum',
+]; 

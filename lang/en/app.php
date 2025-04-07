@@ -1,0 +1,71 @@
+<?php
+
+return [
+    // Navigation
+    'Home' => 'Home',
+    'About' => 'About',
+    'Products' => 'Products',
+    'Resources' => 'Resources',
+    'Contact' => 'Contact',
+    'Language' => 'Language',
+    'Navigation' => 'Navigation',
+
+    // Product Categories
+    'All Products' => 'All Products',
+    'Online Stores' => 'Online Stores',
+    'Segmentation' => 'Segmentation',
+    'Marketing CRM' => 'Marketing CRM',
+    'Featured Products' => 'Featured Products',
+    'Browse All' => 'Browse All',
+    'View Products' => 'View Products',
+    'Request Custom Quote' => 'Request Custom Quote',
+    'Automotive' => 'Automotive',
+    'Medical' => 'Medical',
+    'Industrial' => 'Industrial',
+    'Health Care' => 'Health Care',
+    'Energy & Environmental' => 'Energy & Environmental',
+    'Precision cable solutions for automotive applications and vehicle systems.' => 'Precision cable solutions for automotive applications and vehicle systems.',
+    'Robust cabling solutions for industrial machinery and manufacturing equipment.' => 'Robust cabling solutions for industrial machinery and manufacturing equipment.',
+    'Specialized medical-grade cabling for healthcare devices and equipment.' => 'Specialized medical-grade cabling for healthcare devices and equipment.',
+    'Solutions for renewable energy systems and environmental monitoring equipment.' => 'Solutions for renewable energy systems and environmental monitoring equipment.',
+
+    // Resources
+    'Certificates' => 'Certificates',
+    'Machines' => 'Machines',
+    'Documentation' => 'Documentation',
+    'Case Studies' => 'Case Studies',
+    'View Certificates' => 'View Certificates',
+    'View Machines' => 'View Machines',
+    'View Documentation' => 'View Documentation',
+    'View Case Studies' => 'View Case Studies',
+    'About Our Company' => 'About Our Company',
+    'Contact Us' => 'Contact Us',
+
+    // Footer
+    'Connect with third-party tools that you\'re already using.' => 'Connect with third-party tools that you\'re already using.',
+    'View our complete catalog of cable assembly solutions.' => 'View our complete catalog of cable assembly solutions.',
+    'View our quality certifications and compliance documentation.' => 'View our quality certifications and compliance documentation.',
+    'Explore our state-of-the-art manufacturing equipment.' => 'Explore our state-of-the-art manufacturing equipment.',
+    'Technical documents, datasheets, and user manuals.' => 'Technical documents, datasheets, and user manuals.',
+    'Success stories and real-world applications of our solutions.' => 'Success stories and real-world applications of our solutions.',
+    'Innovative cable assembly and system technology solutions for automotive, medical, and industrial applications.' => 'Innovative cable assembly and system technology solutions for automotive, medical, and industrial applications.',
+    'Lösungen, die verbinden' => 'Solutions that connect',
+    'Copșa Mică, Romania' => 'Copșa Mică, Romania',
+    'All rights reserved.' => 'All rights reserved.',
+    'Privacy Policy' => 'Privacy Policy',
+    'Terms of Service' => 'Terms of Service',
+    'Cookies' => 'Cookies',
+    'About Us' => 'About Us',
+
+    // Homepage
+    'Precision Cable Assembly' => 'Precision Cable Assembly',
+    'Custom Solutions for Your Industry' => 'Custom Solutions for Your Industry',
+    'Learn More' => 'Learn More',
+    'Get Started' => 'Get Started',
+    'Why Choose Us' => 'Why Choose Us',
+    'Industries Served' => 'Industries Served',
+    'Our Certifications' => 'Our Certifications',
+    'Ready to Work With Us?' => 'Ready to Work With Us?',
+    'Contact us today to discuss your custom cable assembly needs' => 'Contact us today to discuss your custom cable assembly needs',
+    'Contact Now' => 'Contact Now',
+]; 
