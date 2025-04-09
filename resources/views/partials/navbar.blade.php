@@ -3,9 +3,9 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('home') }}" class="text-blue-600 font-bold text-xl flex items-center">
-                        <span class="text-blue-800">Pader</span><span class="text-blue-600">TeG</span>
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="{{ route('home') }}">
+                        <img src="{{ asset('images/logo.jpeg') }}" alt="Paderteg Logo" class="h-8 w-auto">
                     </a>
                 </div>
 
@@ -14,7 +14,7 @@
                     <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-900' }} h-16 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200">
                         {{ __('app.Home') }}
                     </a>
-                    
+
                     <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-900' }} h-16 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200">
                         {{ __('app.About') }}
                     </a>
@@ -38,7 +38,7 @@
                             </svg>
                         </button>
                     </div>
-                    
+
                     <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-900' }} h-16 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors duration-200">
                         {{ __('app.Contact') }}
                     </a>
@@ -55,26 +55,26 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    
-                    <div x-show="open" 
-                         x-transition:enter="transition ease-out duration-200" 
-                         x-transition:enter-start="opacity-0 translate-y-1" 
-                         x-transition:enter-end="opacity-100 translate-y-0" 
-                         x-transition:leave="transition ease-in duration-150" 
-                         x-transition:leave-start="opacity-100 translate-y-0" 
-                         x-transition:leave-end="opacity-0 translate-y-1" 
+
+                    <div x-show="open"
+                         x-transition:enter="transition ease-out duration-200"
+                         x-transition:enter-start="opacity-0 translate-y-1"
+                         x-transition:enter-end="opacity-100 translate-y-0"
+                         x-transition:leave="transition ease-in duration-150"
+                         x-transition:leave-start="opacity-100 translate-y-0"
+                         x-transition:leave-end="opacity-0 translate-y-1"
                          class="absolute right-0 mt-2 w-24 rounded-xl shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
                          style="display: none;">
-                        
-                        <a href="{{ route('language.switch', 'en') }}" 
+
+                        <a href="{{ route('language.switch', 'en') }}"
                             class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-t-xl {{ app()->getLocale() == 'en' ? 'bg-blue-50 text-blue-600' : '' }}">
                             EN
                         </a>
-                        <a href="{{ route('language.switch', 'ro') }}" 
+                        <a href="{{ route('language.switch', 'ro') }}"
                             class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 {{ app()->getLocale() == 'ro' ? 'bg-blue-50 text-blue-600' : '' }}">
                             RO
                         </a>
-                        <a href="{{ route('language.switch', 'de') }}" 
+                        <a href="{{ route('language.switch', 'de') }}"
                             class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-b-xl {{ app()->getLocale() == 'de' ? 'bg-blue-50 text-blue-600' : '' }}">
                             DE
                         </a>
@@ -97,24 +97,24 @@
     </div>
 
     <!-- Mobile menu -->
-    <div x-show="open" 
-         x-transition:enter="transition ease-out duration-200" 
-         x-transition:enter-start="opacity-0 -translate-y-1" 
-         x-transition:enter-end="opacity-100 translate-y-0" 
-         x-transition:leave="transition ease-in duration-150" 
-         x-transition:leave-start="opacity-100 translate-y-0" 
-         x-transition:leave-end="opacity-0 -translate-y-1" 
+    <div x-show="open"
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-1"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-1"
          class="sm:hidden"
          style="display: none;">
         <div class="pt-2 pb-3 space-y-1 bg-white shadow-lg rounded-b-xl">
             <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'bg-blue-50 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900' }} block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
                 {{ __('app.Home') }}
             </a>
-            
+
             <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'bg-blue-50 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900' }} block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
                 {{ __('app.About') }}
             </a>
-            
+
             <!-- Mobile Products Dropdown -->
             <div x-data="{ open: false }">
                 <button @click="open = !open" class="{{ request()->routeIs('products.*') ? 'bg-blue-50 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900' }} w-full flex justify-between items-center pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
@@ -123,14 +123,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
-                
-                <div x-show="open" 
-                     x-transition:enter="transition ease-out duration-200" 
-                     x-transition:enter-start="opacity-0 scale-95" 
-                     x-transition:enter-end="opacity-100 scale-100" 
-                     x-transition:leave="transition ease-in duration-150" 
-                     x-transition:leave-start="opacity-100 scale-100" 
-                     x-transition:leave-end="opacity-0 scale-95" 
+
+                <div x-show="open"
+                     x-transition:enter="transition ease-out duration-200"
+                     x-transition:enter-start="opacity-0 scale-95"
+                     x-transition:enter-end="opacity-100 scale-100"
+                     x-transition:leave="transition ease-in duration-150"
+                     x-transition:leave-start="opacity-100 scale-100"
+                     x-transition:leave-end="opacity-0 scale-95"
                      class="pl-4 bg-gray-50 space-y-1 py-2"
                      style="display: none;">
                     <a href="{{ route('products.index') }}" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
@@ -150,7 +150,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <!-- Mobile Resources Dropdown -->
             <div x-data="{ open: false }">
                 <button @click="open = !open" class="{{ request()->routeIs('certificates') || request()->routeIs('machines') || request()->routeIs('resources.*') ? 'bg-blue-50 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900' }} w-full flex justify-between items-center pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
@@ -159,14 +159,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
-                
-                <div x-show="open" 
-                     x-transition:enter="transition ease-out duration-200" 
-                     x-transition:enter-start="opacity-0 scale-95" 
-                     x-transition:enter-end="opacity-100 scale-100" 
-                     x-transition:leave="transition ease-in duration-150" 
-                     x-transition:leave-start="opacity-100 scale-100" 
-                     x-transition:leave-end="opacity-0 scale-95" 
+
+                <div x-show="open"
+                     x-transition:enter="transition ease-out duration-200"
+                     x-transition:enter-start="opacity-0 scale-95"
+                     x-transition:enter-end="opacity-100 scale-100"
+                     x-transition:leave="transition ease-in duration-150"
+                     x-transition:leave-start="opacity-100 scale-100"
+                     x-transition:leave-end="opacity-0 scale-95"
                      class="pl-4 bg-gray-50 space-y-1 py-2"
                      style="display: none;">
                     <a href="{{ route('certificates') }}" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-200">
@@ -177,7 +177,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'bg-blue-50 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900' }} block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors duration-200">
                 {{ __('app.Contact') }}
             </a>
@@ -191,15 +191,15 @@
                 </div>
             </div>
             <div class="mt-3 space-y-1">
-                <a href="{{ route('language.switch', 'en') }}" 
+                <a href="{{ route('language.switch', 'en') }}"
                     class="block w-full text-left pl-3 pr-4 py-2 border-l-4 {{ app()->getLocale() == 'en' ? 'bg-blue-50 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900' }} text-base font-medium transition-colors duration-200">
                     English
                 </a>
-                <a href="{{ route('language.switch', 'ro') }}" 
+                <a href="{{ route('language.switch', 'ro') }}"
                     class="block w-full text-left pl-3 pr-4 py-2 border-l-4 {{ app()->getLocale() == 'ro' ? 'bg-blue-50 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900' }} text-base font-medium transition-colors duration-200">
                     Română
                 </a>
-                <a href="{{ route('language.switch', 'de') }}" 
+                <a href="{{ route('language.switch', 'de') }}"
                     class="block w-full text-left pl-3 pr-4 py-2 border-l-4 {{ app()->getLocale() == 'de' ? 'bg-blue-50 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-900' }} text-base font-medium transition-colors duration-200">
                     Deutsch
                 </a>
@@ -208,15 +208,15 @@
     </div>
 
     <!-- Mega Menu Dropdown for Products -->
-    <div x-show="megaMenu === 'products'" 
+    <div x-show="megaMenu === 'products'"
          @click.away="megaMenu = null"
          @mouseleave="megaMenu = null"
-         x-transition:enter="transition ease-out duration-200" 
-         x-transition:enter-start="opacity-0 -translate-y-1" 
-         x-transition:enter-end="opacity-100 translate-y-0" 
-         x-transition:leave="transition ease-in duration-150" 
-         x-transition:leave-start="opacity-100 translate-y-0" 
-         x-transition:leave-end="opacity-0 -translate-y-1" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-1"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-1"
          class="absolute top-16 inset-x-0 transform shadow-lg bg-white"
          style="display: none;">
         <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
@@ -344,15 +344,15 @@
     </div>
 
     <!-- Mega Menu Dropdown for Resources -->
-    <div x-show="megaMenu === 'resources'" 
+    <div x-show="megaMenu === 'resources'"
          @click.away="megaMenu = null"
          @mouseleave="megaMenu = null"
-         x-transition:enter="transition ease-out duration-200" 
-         x-transition:enter-start="opacity-0 -translate-y-1" 
-         x-transition:enter-end="opacity-100 translate-y-0" 
-         x-transition:leave="transition ease-in duration-150" 
-         x-transition:leave-start="opacity-100 translate-y-0" 
-         x-transition:leave-end="opacity-0 -translate-y-1" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-1"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-1"
          class="absolute top-16 inset-x-0 transform shadow-lg bg-white"
          style="display: none;">
         <div class="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-2 lg:px-8 lg:py-12 xl:py-16">
@@ -420,4 +420,4 @@
 </nav>
 
 <!-- Spacer to account for fixed navbar -->
-<div class="h-16"></div> 
+<div class="h-16"></div>

@@ -15,7 +15,7 @@
         </div>
 
         <!-- Content -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="relative z-10 max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="max-w-3xl">
                 <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                     Our Advanced Machinery & Equipment
@@ -39,7 +39,7 @@
             <div class="max-w-6xl mx-auto">
                 <div class="mb-12 text-center">
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                        {{ __('At PaderTeG, we invest in advanced machinery and equipment to ensure the highest quality in our manufacturing processes. Our state-of-the-art facilities enable us to deliver precision-engineered cable solutions that meet the most demanding requirements.') }}
+                        {{ __('At Paderteg, we invest in advanced machinery and equipment to ensure the highest quality in our manufacturing processes. Our state-of-the-art facilities enable us to deliver precision-engineered cable solutions that meet the most demanding requirements.') }}
                     </p>
                 </div>
 

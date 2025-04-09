@@ -4,9 +4,9 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="bg-blue-800 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:w-2/3">
+    <div class="bg-blue-800 text-white py-16 w-full">
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:w-full">
                 <h1 class="text-4xl font-bold mb-6">{{ __('Our Certificates') }}</h1>
                 <p class="text-xl text-blue-100">
                     {{ __('Quality assurance and compliance documentation showcasing our commitment to excellence and industry standards.') }}
@@ -16,15 +16,15 @@
     </div>
 
     <!-- Certificates Section -->
-    <div class="bg-white py-16" x-data="{ activeTab: 'axente', showModal: false, currentCertificate: null }">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="prose prose-blue max-w-none mb-12">
-                <p>{{ __('At PaderTeG, we adhere to the highest standards of quality and compliance in our manufacturing processes. Our certifications demonstrate our commitment to excellence, safety, and environmental responsibility.') }}</p>
+    <div class="bg-white py-16 w-full" x-data="{ activeTab: 'axente', showModal: false, currentCertificate: null }">
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose prose-blue w-full mb-12">
+                <p>{{ __('At Paderteg, we adhere to the highest standards of quality and compliance in our manufacturing processes. Our certifications demonstrate our commitment to excellence, safety, and environmental responsibility.') }}</p>
                 <p>{{ __('Below you will find our current certificates for each of our locations. Each document can be viewed online or downloaded as a PDF for your reference.') }}</p>
             </div>
 
             <!-- Hero Section (Introduction) -->
-            <div class="bg-blue-50 rounded-xl p-8 mb-12">
+            <div class="bg-blue-50 rounded-xl p-8 mb-12 w-full">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Certificates & Accreditations</h2>
                 <p class="text-lg text-gray-700 mb-6">
                     Explore our certifications for our facilities located in Axente Sever and Copșa Mică, showcasing our
@@ -40,9 +40,9 @@
             </div>
 
             <!-- Location Selection Tabs -->
-            <div class="mb-12">
+            <div class="mb-12 w-full">
                 <!-- Tabs -->
-                <div class="border-b border-gray-200">
+                <div class="border-b border-gray-200 w-full">
                     <nav class="flex -mb-px space-x-8" aria-label="Locations">
                         <button
                             @click="activeTab = 'axente'"
@@ -62,12 +62,12 @@
                 </div>
 
                 <!-- Axente Sever Certificates -->
-                <div x-show="activeTab === 'axente'" class="mt-8">
+                <div x-show="activeTab === 'axente'" class="mt-8 w-full">
                     <h3 class="text-2xl font-semibold text-gray-900 mb-4">Certificates for Axente Sever Location</h3>
                     <p class="text-gray-600 mb-8">Our Axente Sever facility holds these key certifications demonstrating
                         our commitment to quality and industry standards.</p>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                         <!-- ISO 9001:2015 Certificate -->
                         <div
                             class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
@@ -147,12 +147,12 @@
                 </div>
 
                 <!-- Copsa Mica Certificates -->
-                <div x-show="activeTab === 'copsa'" class="mt-8">
+                <div x-show="activeTab === 'copsa'" class="mt-8 w-full">
                     <h3 class="text-2xl font-semibold text-gray-900 mb-4">Certificates for Copșa Mică Location</h3>
                     <p class="text-gray-600 mb-8">Our Copșa Mică facility holds these key certifications demonstrating
                         our commitment to quality, safety, and environmental responsibility.</p>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                         <!-- ISO 9001:2015 Certificate -->
                         <div
                             class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
@@ -309,62 +309,70 @@
             </div>
 
             <!-- Certificate Modal -->
-            <div x-show="showModal"
-                 class="fixed inset-0 z-50 overflow-y-auto"
+            <div x-show="showModal" 
+                 class="fixed inset-0 z-50 overflow-y-auto" 
                  x-transition:enter="transition ease-out duration-300"
                  x-transition:enter-start="opacity-0"
                  x-transition:enter-end="opacity-100"
                  x-transition:leave="transition ease-in duration-200"
                  x-transition:leave-start="opacity-100"
                  x-transition:leave-end="opacity-0">
-                <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-                    <div class="fixed inset-0 transition-opacity" aria-hidden="true">
-                        <div class="absolute inset-0 bg-gray-500 opacity-75" @click="showModal = false"></div>
-                    </div>
+                <div class="fixed inset-0 bg-black bg-opacity-50" @click="showModal = false"></div>
+                
+                <div class="flex items-center justify-center min-h-screen p-4">
+                    <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full mx-auto relative" 
+                         x-show="showModal"
+                         x-transition:enter="transition ease-out duration-300"
+                         x-transition:enter-start="opacity-0 transform scale-95"
+                         x-transition:enter-end="opacity-100 transform scale-100"
+                         x-transition:leave="transition ease-in duration-200"
+                         x-transition:leave-start="opacity-100 transform scale-100"
+                         x-transition:leave-end="opacity-0 transform scale-95">
+                        
+                        <!-- Close button -->
+                        <button @click="showModal = false" class="absolute top-4 right-4 text-gray-400 hover:text-gray-500">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
 
-                    <div
-                        class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full"
-                        @click.away="showModal = false">
-                        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                            <div class="sm:flex sm:items-start">
-                                <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
-                                    <h3 class="text-2xl leading-6 font-semibold text-gray-900 mb-4"
-                                        x-text="currentCertificate?.title"></h3>
-                                    <div class="mt-4 flex justify-center">
-                                        <img :src="currentCertificate?.image" :alt="currentCertificate?.title"
-                                             class="h-64 object-contain">
-                                    </div>
-                                    <p class="mt-4 text-gray-600" x-text="currentCertificate?.description"></p>
-                                    <p class="mt-2 text-sm text-gray-500">Valid until: <span
-                                            x-text="currentCertificate?.validUntil"></span></p>
-                                </div>
+                        <!-- Modal content -->
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4" x-text="currentCertificate?.title"></h3>
+                            
+                            <div class="mb-6">
+                                <img :src="currentCertificate?.image" :alt="currentCertificate?.title" class="w-full h-auto rounded-lg">
                             </div>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                            <button type="button"
-                                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
-                                    @click="showModal = false">
-                                Close
-                            </button>
-                            <a :href="currentCertificate?.download"
-                               class="mt-3 sm:mt-0 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm">
-                                Download Certificate
-                            </a>
+
+                            <div class="mb-6">
+                                <p class="text-gray-600" x-text="currentCertificate?.description"></p>
+                                <p class="text-sm text-gray-500 mt-2" x-text="'Valid until: ' + currentCertificate?.validUntil"></p>
+                            </div>
+
+                            <div class="flex justify-end">
+                                <a :href="currentCertificate?.download" 
+                                   class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Download PDF
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Contact for More Information -->
-            <div class="mt-16 bg-gray-50 rounded-lg p-8">
+            <div class="mt-16 bg-gray-50 rounded-lg p-8 w-full">
                 <div class="md:flex md:items-center md:justify-between">
-                    <div class="md:w-2/3">
+                    <div class="md:w-full">
                         <h3 class="text-xl font-semibold text-gray-900 mb-4">{{ __('Need More Information?') }}</h3>
                         <p class="text-gray-600">
                             {{ __('If you require specific certification information or have questions about our compliance with industry standards, please don\'t hesitate to contact our quality assurance team.') }}
                         </p>
                     </div>
-                    <div class="mt-6 md:mt-0">
+                    <div class="mt-6 md:mt-0 md:ml-4 flex-shrink-0">
                         <a href="{{ route('contact') }}"
                            class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
                             {{ __('Contact Us') }}

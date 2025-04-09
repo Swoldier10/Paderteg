@@ -1,10 +1,10 @@
 <footer class="bg-gray-900 text-white pt-20 pb-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
             <!-- Company Info -->
             <div class="col-span-1 md:col-span-4">
                 <div class="text-blue-600 font-bold text-xl flex items-center mb-6">
-                    <span class="text-blue-400">Pader</span><span class="text-blue-500">TeG</span>
+                    <span class="text-blue-400">Pader</span><span class="text-blue-500">teg</span>
                 </div>
                 <p class="text-gray-300 mb-4 max-w-md">{{ __('app.Innovative cable assembly and system technology solutions for automotive, medical, and industrial applications.') }}</p>
                 <p class="text-gray-400 italic">{{ __('app.Lösungen, die verbinden') }}</p>
@@ -84,7 +84,7 @@
 
         <!-- Bottom Footer -->
         <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-500 text-sm">&copy; {{ date('Y') }} PaderTeG. {{ __('app.All rights reserved.') }}</p>
+            <p class="text-gray-500 text-sm">&copy; {{ date('Y') }} Paderteg. {{ __('app.All rights reserved.') }}</p>
             
             <div class="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" class="text-gray-500 text-sm hover:text-gray-400 transition-colors">{{ __('app.Privacy Policy') }}</a>

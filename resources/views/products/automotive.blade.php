@@ -31,7 +31,7 @@
             <div class="max-w-4xl mx-auto text-center mb-16">
                 <h2 class="text-3xl font-bold mb-6">Why Choose Our Automotive Cable Solutions</h2>
                 <p class="text-lg text-gray-600 mb-8">
-                    PaderTeG specializes in high-performance cable assemblies designed specifically for automotive applications. Our solutions are built to withstand the extreme conditions found in modern vehicles, from high temperatures in engine compartments to constant vibration and movement. With decades of experience serving leading automotive manufacturers, we deliver reliable connectivity solutions that meet the strictest industry standards.
+                    Paderteg specializes in high-performance cable assemblies designed specifically for automotive applications. Our solutions are built to withstand the extreme conditions found in modern vehicles, from high temperatures in engine compartments to constant vibration and movement. With decades of experience serving leading automotive manufacturers, we deliver reliable connectivity solutions that meet the strictest industry standards.
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                     <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">

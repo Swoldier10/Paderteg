@@ -9,10 +9,10 @@
             <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80 mix-blend-multiply"></div>
             <div class="absolute inset-0 bg-[url('/images/contact-hero.jpg')] bg-cover bg-center"></div>
         </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-white">
+        <div class="relative z-10 max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-24 text-white">
             <div class="hero-content opacity-0 transform translate-y-8 transition-all duration-1000 ease-out">
                 <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-                    Get in Touch with PaderTeG
+                    Get in Touch with Paderteg
                 </h1>
                 <p class="text-xl text-blue-100 mb-6 max-w-3xl">
                     We're here to assist you with all your cable assembly needs. Contact us today for quotes, consultations, or more information.
@@ -23,7 +23,7 @@
 
     <!-- Contact Information & Form Section -->
     <section class="py-24 bg-white scroll-mt-16" id="contact-section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-20">
                 <!-- Contact Information -->
                 <div class="fade-in-section">
@@ -258,8 +258,8 @@
 
     <!-- CTA Section -->
     <section class="py-20 bg-blue-900 text-white scroll-mt-16" id="cta-section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto fade-in-section">
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-full mx-auto fade-in-section">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">Need a Custom Cable Assembly Solution?</h2>
                 <p class="text-xl text-blue-100 mb-10">
                     Our team specializes in creating tailored cable solutions to meet your unique requirements. We'll work closely with you to develop the perfect solution for your needs.

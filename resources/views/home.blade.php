@@ -9,7 +9,7 @@
         <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80 mix-blend-multiply"></div>
         <div class="absolute inset-0 bg-[url('/images/cable-bg.jpg')] bg-cover bg-center"></div>
     </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-white">
+    <div class="relative z-10 max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-24 text-white">
         <div class="hero-content opacity-0 transform translate-y-8 transition-all duration-1000 ease-out">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
                 Custom Cable Assemblies Built for Reliability & Performance
@@ -36,13 +36,13 @@
 
 <!-- About Us Section -->
 <section class="py-24 bg-white scroll-mt-16" id="about-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div class="fade-in-section">
-                <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">About PaderTeG</span>
+                <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">About Paderteg</span>
                 <h2 class="text-4xl font-bold text-gray-900 mb-6">Crafting Quality Connections Since 2004</h2>
                 <p class="text-lg text-gray-600 mb-6">
-                    At PaderTeG, we've built our reputation on delivering exceptional quality cable assemblies and wiring harnesses. With over 19 years of experience, we've become a trusted partner for companies requiring precision-engineered connection solutions.
+                    At Paderteg, we've built our reputation on delivering exceptional quality cable assemblies and wiring harnesses. With over 19 years of experience, we've become a trusted partner for companies requiring precision-engineered connection solutions.
                 </p>
                 <p class="text-lg text-gray-600 mb-8">
                     Our ISO 9001:2015 certified manufacturing facilities in Romania ensure consistent quality and reliability across all our products.
@@ -67,7 +67,7 @@
 
 <!-- Products & Services -->
 <section class="py-24 bg-gray-50 scroll-mt-16" id="products-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 fade-in-section">
             <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Our Products</span>
             <h2 class="text-4xl font-bold text-gray-900 mb-6">High-Performance Cable Solutions</h2>
@@ -135,7 +135,7 @@
 
 <!-- Why Choose Us -->
 <section class="py-24 bg-white scroll-mt-16" id="why-choose-us">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 fade-in-section">
             <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Why Choose Us</span>
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Commitment to Excellence</h2>
@@ -186,7 +186,7 @@
 
 <!-- Industries Served -->
 <section class="py-24 bg-gray-50 scroll-mt-16" id="industries-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 fade-in-section">
             <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Industries</span>
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Sectors We Serve</h2>
@@ -237,7 +237,7 @@
 
 <!-- Certifications -->
 <section class="py-24 bg-white scroll-mt-16" id="certifications-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 fade-in-section">
             <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Certifications</span>
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Quality Assurance & Compliance</h2>
@@ -303,7 +303,7 @@
 
 <!-- CTA Section -->
 <section class="py-20 bg-blue-900 text-white scroll-mt-16" id="contact-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="md:flex md:items-center md:justify-between fade-in-section">
             <div class="md:w-2/3 mb-8 md:mb-0">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to discuss your cable requirements?</h2>

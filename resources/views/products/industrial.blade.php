@@ -31,7 +31,7 @@
             <div class="max-w-4xl mx-auto text-center mb-16">
                 <h2 class="text-3xl font-bold mb-6">Why Choose Us for Industrial Cable Solutions</h2>
                 <p class="text-lg text-gray-600 mb-8">
-                    For over 15 years, PaderTeG has been delivering rugged cable solutions for demanding industrial environments. Our industrial cable assemblies are engineered to withstand extreme conditions, including high temperatures, chemical exposure, and constant movement, ensuring uninterrupted operations in your critical systems.
+                    For over 15 years, Paderteg has been delivering rugged cable solutions for demanding industrial environments. Our industrial cable assemblies are engineered to withstand extreme conditions, including high temperatures, chemical exposure, and constant movement, ensuring uninterrupted operations in your critical systems.
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                     <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -154,7 +154,7 @@
                 <div>
                     <h3 class="text-2xl font-semibold mb-6">Why Our Industrial Cable Solutions Excel</h3>
                     <p class="text-gray-600 mb-6">
-                        At PaderTeG, we understand the demanding requirements of industrial environments. Our industrial cable assemblies are built to withstand harsh conditions, providing reliable performance in manufacturing plants, automation systems, and heavy machinery.
+                        At Paderteg, we understand the demanding requirements of industrial environments. Our industrial cable assemblies are built to withstand harsh conditions, providing reliable performance in manufacturing plants, automation systems, and heavy machinery.
                     </p>
                     <p class="text-gray-600 mb-6">
                         We employ specialized materials and construction techniques that ensure our cables can resist oil, chemicals, abrasion, and extreme temperatures. Each assembly undergoes rigorous testing to verify mechanical strength, electrical performance, and long-term reliability.
