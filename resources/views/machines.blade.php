@@ -79,7 +79,7 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/komax_machines.avif') }}"
+                                    src="{{ asset('images/machines/machine-komax.jpg') }}"
                                     alt="Komax Machine"
                                     class="w-full h-full object-cover"
                                     onerror="this.src='https://images.unsplash.com/photo-1590254527463-5d4cc4b2b656?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'"
@@ -124,9 +124,10 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/idc.avif') }}"
+                                    src="{{ asset('images/machines/idc.png') }}"
                                     alt="IDC Pressing Machine"
                                     class="w-full h-full object-cover"
+                                    style="object-fit: fill"
                                 >
                             </div>
                             <div class="p-6">
@@ -168,9 +169,9 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/crimping.png') }}"
+                                    src="{{ asset('images/machines/crimping-machine.png.avif') }}"
                                     alt="Crimping Machine"
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
@@ -212,9 +213,9 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/processing.jpg') }}"
+                                    src="{{ asset('images/machines/cable-processing.png') }}"
                                     alt="Cable Processing Equipment"
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
@@ -268,9 +269,9 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/molding.jpg') }}"
+                                    src="{{ asset('images/machines/injection-machine.jpeg') }}"
                                     alt="Molding Machine"
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
@@ -312,9 +313,9 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/laser.webp') }}"
+                                    src="{{ asset('images/machines/laser-printing.jpg') }}"
                                     alt="Laser Marking Machine"
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
@@ -368,9 +369,9 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/welding.jpg') }}"
+                                    src="{{ asset('images/machines/welding-machines.jpg') }}"
                                     alt="Ultrasonic Welding Machine"
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
@@ -412,9 +413,9 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/taping.webp') }}"
+                                    src="{{ asset('images/machines/taping-machines.png') }}"
                                     alt="Taping Machine"
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
@@ -456,9 +457,9 @@
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/eol.jpg') }}"
+                                    src="{{ asset('images/machines/testing.png') }}"
                                     alt="EOL Testing Machine"
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
@@ -499,26 +500,26 @@
                 </div>
 
                 <!-- Video Modal -->
-                <div x-show="showVideoModal" 
+                <div x-show="showVideoModal"
                      x-transition:enter="transition ease-out duration-300"
                      x-transition:enter-start="opacity-0"
                      x-transition:enter-end="opacity-100"
                      x-transition:leave="transition ease-in duration-200"
                      x-transition:leave-start="opacity-100"
                      x-transition:leave-end="opacity-0"
-                     class="fixed inset-0 z-50 overflow-y-auto" 
-                     aria-labelledby="modal-title" 
-                     role="dialog" 
+                     class="fixed inset-0 z-50 overflow-y-auto"
+                     aria-labelledby="modal-title"
+                     role="dialog"
                      aria-modal="true">
                     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-                        <div x-show="showVideoModal" 
+                        <div x-show="showVideoModal"
                              x-transition:enter="transition ease-out duration-300"
                              x-transition:enter-start="opacity-0"
                              x-transition:enter-end="opacity-100"
                              x-transition:leave="transition ease-in duration-200"
                              x-transition:leave-start="opacity-100"
                              x-transition:leave-end="opacity-0"
-                             class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" 
+                             class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
                              aria-hidden="true"
                              @click="showVideoModal = false">
                         </div>
