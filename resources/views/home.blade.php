@@ -7,10 +7,16 @@
 <section class="relative h-[600px] flex items-center overflow-hidden" id="hero-section">
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80 mix-blend-multiply w-full">
-            <video class="w-full h-full" autoplay loop muted style="position: relative; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-                <source src="{{ asset('storage/Paderteg-home-video-1.mp4') }}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/ZqjUfCVhOfw?autoplay=1&loop=1&mute=1&controls=0&playlist=ZqjUfCVhOfw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
         </div>
         <div class="absolute inset-0 bg-blue-800 bg-cover bg-center bg-opacity-35"></div>
     </div>
