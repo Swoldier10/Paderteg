@@ -4,10 +4,15 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="relative h-screen flex items-center overflow-hidden" id="hero-section">
+<section class="relative h-[600px] flex items-center overflow-hidden" id="hero-section">
     <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80 mix-blend-multiply"></div>
-        <div class="absolute inset-0 bg-[url('/images/cable-bg.jpg')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80 mix-blend-multiply w-full">
+            <video class="w-full h-full" autoplay loop muted style="position: relative; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                <source src="{{ asset('storage/Paderteg-home-video-1.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="absolute inset-0 bg-blue-800 bg-cover bg-center bg-opacity-35"></div>
     </div>
     <div class="relative z-10 max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-24 text-white">
         <div class="hero-content opacity-0 transform translate-y-8 transition-all duration-1000 ease-out">
