@@ -88,18 +88,18 @@
                     <!-- Map -->
                     <div class="rounded-2xl overflow-hidden shadow-lg fade-in-section">
                         <div class="aspect-w-16 aspect-h-9 relative">
-                            <iframe 
+                            <iframe
                                 class="w-full h-full"
-                                style="border:0" 
-                                loading="lazy" 
-                                allowfullscreen 
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
                                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Copsa+Mica,Romania">
                             </iframe>
                         </div>
                         <div class="p-4 bg-white">
-                            <a 
-                                href="https://www.google.com/maps/dir//Copsa+Mica,Romania" 
-                                target="_blank" 
+                            <a
+                                href="https://www.google.com/maps/dir//Copsa+Mica,Romania"
+                                target="_blank"
                                 class="text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center transition-colors">
                                 Get Directions
                                 <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -111,147 +111,114 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div class="fade-in-section">
-                    <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Send Message</span>
-                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+{{--                <div class="fade-in-section">--}}
+{{--                    <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Send Message</span>--}}
+{{--                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>--}}
 
-                    @if(session('success'))
-                        <div class="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg mb-8" role="alert">
-                            <div class="flex">
-                                <div class="flex-shrink-0">
-                                    <svg class="h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
-                                </div>
-                                <div class="ml-3">
-                                    <p class="text-sm text-green-700">{{ session('success') }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    @endif
+{{--                    @if(session('success'))--}}
+{{--                        <div class="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg mb-8" role="alert">--}}
+{{--                            <div class="flex">--}}
+{{--                                <div class="flex-shrink-0">--}}
+{{--                                    <svg class="h-5 w-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">--}}
+{{--                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>--}}
+{{--                                    </svg>--}}
+{{--                                </div>--}}
+{{--                                <div class="ml-3">--}}
+{{--                                    <p class="text-sm text-green-700">{{ session('success') }}</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    @endif--}}
 
-                    <form action="{{ route('contact.send') }}" method="POST" class="space-y-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                        @csrf
-                        
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>
-                                <input 
-                                    type="text" 
-                                    name="name" 
-                                    id="name" 
-                                    required 
-                                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('name') border-red-500 @enderror" 
-                                    value="{{ old('name') }}"
-                                >
-                                @error('name')
-                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                                @enderror
-                            </div>
-                            
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
-                                <input 
-                                    type="email" 
-                                    name="email" 
-                                    id="email" 
-                                    required 
-                                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('email') border-red-500 @enderror" 
-                                    value="{{ old('email') }}"
-                                >
-                                @error('email')
-                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                                @enderror
-                            </div>
-                        </div>
+{{--                    <form action="{{ route('contact.send') }}" method="POST" class="space-y-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">--}}
+{{--                        @csrf--}}
 
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                                <input 
-                                    type="tel" 
-                                    name="phone" 
-                                    id="phone" 
-                                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('phone') border-red-500 @enderror" 
-                                    value="{{ old('phone') }}"
-                                >
-                                @error('phone')
-                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                                @enderror
-                            </div>
-                            
-                            <div>
-                                <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
-                                <input 
-                                    type="text" 
-                                    name="company" 
-                                    id="company" 
-                                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('company') border-red-500 @enderror" 
-                                    value="{{ old('company') }}"
-                                >
-                                @error('company')
-                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                                @enderror
-                            </div>
-                        </div>
+{{--                        <div class="grid md:grid-cols-2 gap-6">--}}
+{{--                            <div>--}}
+{{--                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name <span class="text-red-500">*</span></label>--}}
+{{--                                <input--}}
+{{--                                    type="text"--}}
+{{--                                    name="name"--}}
+{{--                                    id="name"--}}
+{{--                                    required--}}
+{{--                                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('name') border-red-500 @enderror"--}}
+{{--                                    value="{{ old('name') }}"--}}
+{{--                                >--}}
+{{--                                @error('name')--}}
+{{--                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
 
-                        <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject <span class="text-red-500">*</span></label>
-                            <select 
-                                name="subject" 
-                                id="subject" 
-                                required 
-                                class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('subject') border-red-500 @enderror"
-                            >
-                                <option value="">Select an option</option>
-                                <option value="General Inquiry" {{ old('subject') == 'General Inquiry' ? 'selected' : '' }}>General Inquiry</option>
-                                <option value="Request a Quote" {{ old('subject') == 'Request a Quote' ? 'selected' : '' }}>Request a Quote</option>
-                                <option value="Technical Support" {{ old('subject') == 'Technical Support' ? 'selected' : '' }}>Technical Support</option>
-                                <option value="Partnership" {{ old('subject') == 'Partnership' ? 'selected' : '' }}>Partnership</option>
-                            </select>
-                            @error('subject')
-                                <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                            @enderror
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message <span class="text-red-500">*</span></label>
-                            <textarea 
-                                name="message" 
-                                id="message" 
-                                rows="5" 
-                                required 
-                                class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('message') border-red-500 @enderror"
-                            >{{ old('message') }}</textarea>
-                            @error('message')
-                                <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                            @enderror
-                        </div>
-                        
-                        <div>
-                            <label for="attachment" class="block text-sm font-medium text-gray-700 mb-1">Attachment (Optional)</label>
-                            <input 
-                                type="file" 
-                                name="attachment" 
-                                id="attachment" 
-                                class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
-                            >
-                            <p class="mt-1 text-sm text-gray-500">Upload specifications or designs (Max. 10MB)</p>
-                            @error('attachment')
-                                <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                            @enderror
-                        </div>
-                        
-                        <div>
-                            <button type="submit" class="inline-flex items-center justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
-                                Send Message
-                                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H3a1 1 0 110-2h9.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+{{--                            <div>--}}
+{{--                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>--}}
+{{--                                <input--}}
+{{--                                    type="email"--}}
+{{--                                    name="email"--}}
+{{--                                    id="email"--}}
+{{--                                    required--}}
+{{--                                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('email') border-red-500 @enderror"--}}
+{{--                                    value="{{ old('email') }}"--}}
+{{--                                >--}}
+{{--                                @error('email')--}}
+{{--                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+{{--                        <div class="grid md:grid-cols-2 gap-6">--}}
+{{--                            <div>--}}
+{{--                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>--}}
+{{--                                <input--}}
+{{--                                    type="tel"--}}
+{{--                                    name="phone"--}}
+{{--                                    id="phone"--}}
+{{--                                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('phone') border-red-500 @enderror"--}}
+{{--                                    value="{{ old('phone') }}"--}}
+{{--                                >--}}
+{{--                                @error('phone')--}}
+{{--                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
+
+{{--                            <div>--}}
+{{--                                <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>--}}
+{{--                                <input--}}
+{{--                                    type="text"--}}
+{{--                                    name="company"--}}
+{{--                                    id="company"--}}
+{{--                                    class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('company') border-red-500 @enderror"--}}
+{{--                                    value="{{ old('company') }}"--}}
+{{--                                >--}}
+{{--                                @error('company')--}}
+{{--                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+{{--                        <div>--}}
+{{--                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message <span class="text-red-500">*</span></label>--}}
+{{--                            <textarea--}}
+{{--                                name="message"--}}
+{{--                                id="message"--}}
+{{--                                rows="5"--}}
+{{--                                required--}}
+{{--                                class="block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 @error('message') border-red-500 @enderror"--}}
+{{--                            >{{ old('message') }}</textarea>--}}
+{{--                            @error('message')--}}
+{{--                                <p class="mt-1 text-sm text-red-600">{{ $message }}</p>--}}
+{{--                            @enderror--}}
+{{--                        </div>--}}
+
+{{--                        <div>--}}
+{{--                            <button type="submit" class="inline-flex items-center justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">--}}
+{{--                                Send Message--}}
+{{--                                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">--}}
+{{--                                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H3a1 1 0 110-2h9.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>--}}
+{{--                                </svg>--}}
+{{--                            </button>--}}
+{{--                        </div>--}}
+{{--                    </form>--}}
+{{--                </div>--}}
             </div>
         </div>
     </section>
@@ -278,24 +245,24 @@
             setTimeout(() => {
                 document.querySelector('.hero-content').classList.remove('opacity-0', 'translate-y-8');
             }, 300);
-            
+
             // Fade-in animations on scroll
             const fadeElements = document.querySelectorAll('.fade-in-section');
-            
+
             const fadeInOnScroll = function() {
                 fadeElements.forEach(element => {
                     const elementTop = element.getBoundingClientRect().top;
                     const windowHeight = window.innerHeight;
-                    
+
                     if (elementTop < windowHeight * 0.9) {
                         element.classList.add('fade-in');
                     }
                 });
             };
-            
+
             // Initial check
             fadeInOnScroll();
-            
+
             // Check on scroll
             window.addEventListener('scroll', fadeInOnScroll);
         });
@@ -309,11 +276,11 @@
             transform: translateY(30px);
             transition: opacity 1s ease-out, transform 1s ease-out;
         }
-        
+
         .fade-in-section.fade-in {
             opacity: 1;
             transform: translateY(0);
         }
     </style>
     @endpush
-@endsection 
+@endsection
