@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Paderteg</title>
+    <meta name="description" content="Custom Cable Assemblies Built for Reliability & Performance">
+    <meta name="keywords" content="cable, assembly, automotive, medical, quality, innovation, integrity, sustainability, industry, energy">
+    <meta name="author" content="Paderteg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,22 +22,22 @@
             --grid-color: rgba(255, 255, 255, 0.2);
             --dot-size: 1px;
             --dot-color: rgba(255, 255, 255, 0.3);
-            
+
             position: absolute;
             inset: 0;
             z-index: 1;
             background-color: transparent;
-            background-image: 
+            background-image:
                 linear-gradient(var(--grid-color) var(--grid-strength), transparent var(--grid-strength)),
                 linear-gradient(90deg, var(--grid-color) var(--grid-strength), transparent var(--grid-strength));
             background-size: var(--grid-size) var(--grid-size);
-            
-            mask-image: radial-gradient(ellipse at center, 
-                rgba(0, 0, 0, 1) 0%, 
-                rgba(0, 0, 0, 1) 70%, 
+
+            mask-image: radial-gradient(ellipse at center,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(0, 0, 0, 1) 70%,
                 rgba(0, 0, 0, 0) 100%);
         }
-        
+
         .retro-grid::after {
             content: "";
             position: absolute;
@@ -45,12 +48,12 @@
             );
             background-size: var(--grid-size) var(--grid-size);
             background-position: calc(var(--grid-size) / 2) calc(var(--grid-size) / 2);
-            mask-image: radial-gradient(ellipse at center, 
-                rgba(0, 0, 0, 1) 0%, 
-                rgba(0, 0, 0, 1) 70%, 
+            mask-image: radial-gradient(ellipse at center,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(0, 0, 0, 1) 70%,
                 rgba(0, 0, 0, 0) 100%);
         }
-        
+
         .retro-sun {
             position: absolute;
             bottom: -30%;
@@ -96,4 +99,4 @@
 
     @stack('scripts')
 </body>
-</html> 
+</html>
