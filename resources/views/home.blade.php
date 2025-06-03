@@ -4,19 +4,9 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="relative h-[900px] flex items-center overflow-hidden" id="hero-section">
+<section class="relative h-[600px] flex items-center overflow-hidden" id="hero-section">
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80 mix-blend-multiply w-full">
-{{--            <iframe--}}
-{{--                width="100%"--}}
-{{--                height="100%"--}}
-{{--            src="https://streamable.com/e/vxxoc6?"--}}
-{{--                title="YouTube video player"--}}
-{{--                frameborder="0"--}}
-{{--                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"--}}
-{{--                allowfullscreen--}}
-{{--                referrerpolicy="strict-origin-when-cross-origin">--}}
-{{--            </iframe>--}}
             <div style="position:relative; width:100%; height:100%;"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/vxxoc6?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
         </div>
         <div class="absolute inset-0 bg-blue-800 bg-cover bg-center bg-opacity-35"></div>
