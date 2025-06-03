@@ -41,7 +41,7 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold mb-3">Medical Certifications</h3>
-                        <p class="text-gray-600">ISO 13485 certified manufacturing with full compliance to medical device standards.</p>
+                        <p class="text-gray-600">ISO 9001:2015 and IATF16949:2016 certified manufacturing. In addition to meeting the stringent requirements of the automotive industry, we ensure full compliance with the specific standards, regulations, and expectations of our customers in the medical sector.</p>
                     </div>
                     <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -230,11 +230,11 @@
                         <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
                 </a>
-                <a href="tel:+40123456789" class="text-white hover:text-gray-200 font-medium inline-flex items-center transition-colors duration-300">
+                <a href="tel:+40731375768" class="text-white hover:text-gray-200 font-medium inline-flex items-center transition-colors duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.502 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
-                    +40 123 456 789
+                    +40 731 375 768
                 </a>
             </div>
         </div>

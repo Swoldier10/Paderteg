@@ -34,7 +34,7 @@
     </div>
 
     <!-- Machines Categories Section -->
-    <section class="py-16 bg-white" x-data="{ activeCategory: 'wiring', showVideoModal: false, currentVideo: '' }">
+    <section class="py-16 bg-white" x-data="{ activeCategory: 'cutting', showVideoModal: false, currentVideo: '' }">
         <div class="container mx-auto px-4">
             <div class="max-w-6xl mx-auto">
                 <div class="mb-12 text-center">
@@ -45,36 +45,35 @@
 
                 <div class="flex flex-wrap justify-center gap-4 mb-16">
                     <button
-                        @click="activeCategory = 'wiring'"
-                        :class="activeCategory === 'wiring' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100'"
+                        @click="activeCategory = 'cutting'"
+                        :class="activeCategory === 'cutting' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100'"
                         class="px-6 py-3 rounded-lg font-medium text-lg shadow-sm transition-all">
-                        Wiring & Assembly Machines
+                        Cutting, crimping machines
                     </button>
                     <button
-                        @click="activeCategory = 'molding'"
-                        :class="activeCategory === 'molding' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100'"
+                        @click="activeCategory = 'welding'"
+                        :class="activeCategory === 'welding' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100'"
                         class="px-6 py-3 rounded-lg font-medium text-lg shadow-sm transition-all">
-                        Molding & Printing Machines
+                        Welding, molding and printing machines
                     </button>
                     <button
-                        @click="activeCategory = 'testing'"
-                        :class="activeCategory === 'testing' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100'"
+                        @click="activeCategory = 'taping'"
+                        :class="activeCategory === 'taping' ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100'"
                         class="px-6 py-3 rounded-lg font-medium text-lg shadow-sm transition-all">
-                        Testing & Quality Control
+                        Taping and testing machines
                     </button>
                 </div>
 
-                <!-- Dynamic Content for Machine Categories -->
-                <!-- Wiring & Assembly Machines -->
-                <div x-show="activeCategory === 'wiring'" class="space-y-16">
+                <!-- Cutting & Crimping Machines -->
+                <div x-show="activeCategory === 'cutting'" class="space-y-16">
                     <div class="text-center mb-10">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Wiring & Assembly Machines</h2>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Cutting & Crimping Machines</h2>
                         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Machines dedicated to cutting, crimping, welding, and assembling wires and cables with precision.
+                            Advanced machines for precise cutting and crimping operations.
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Komax Machines -->
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
@@ -208,42 +207,54 @@
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Cable Processing Equipment -->
+                <!-- Welding, Molding & Printing Machines -->
+                <div x-show="activeCategory === 'welding'" class="space-y-16">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Welding, Molding & Printing Machines</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Specialized equipment for welding, molding, and marking operations.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Ultrasonic Welding Machines -->
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/machines/cable-processing.png') }}"
-                                    alt="Cable Processing Equipment"
+                                    src="{{ asset('images/machines/welding-machines.jpg') }}"
+                                    alt="Ultrasonic Welding Machine"
                                     class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
-                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Cable Processing Equipment</h3>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Ultrasonic Welding Machines</h3>
                                 <p class="text-gray-600 mb-4">
-                                    Various machines specialized in cutting, stripping, twisting, and terminating cables for a range of applications.
+                                    Non-contact welding technology used to join materials through high-frequency sound waves, providing clean and precise welds without adhesives.
                                 </p>
                                 <div class="mt-6 space-y-3">
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>Multi-core cable processing</span>
+                                        <span>Clean, adhesive-free joining</span>
                                     </div>
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>Cable harness assembly</span>
+                                        <span>High-frequency precision control</span>
                                     </div>
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>Specialized connectorization</span>
+                                        <span>Multiple material compatibility</span>
                                     </div>
                                 </div>
-                                <button @click="showVideoModal = true; currentVideo = 'https://www.youtube.com/embed/example4'" class="mt-6 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center">
+                                <button @click="showVideoModal = true; currentVideo = 'https://www.youtube.com/embed/example7'" class="mt-6 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center">
                                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -252,20 +263,8 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Molding & Printing Machines -->
-                <div x-show="activeCategory === 'molding'" class="space-y-16">
-                    <div class="text-center mb-10">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Molding & Printing Machines</h2>
-                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Equipment focused on producing components through molding and labeling with precision and durability.
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Molding Machines -->
+                        <!-- Injection Molding Machines -->
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
@@ -309,7 +308,7 @@
                             </div>
                         </div>
 
-                        <!-- Laser Printing Machines -->
+                        <!-- Laser Marking Machines -->
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
@@ -355,51 +354,51 @@
                     </div>
                 </div>
 
-                <!-- Testing & Quality Control Machines -->
-                <div x-show="activeCategory === 'testing'" class="space-y-16">
+                <!-- Taping & Testing Machines -->
+                <div x-show="activeCategory === 'taping'" class="space-y-16">
                     <div class="text-center mb-10">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Testing & Quality Control Machines</h2>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Taping & Testing Machines</h2>
                         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Machines ensuring product quality and reliability before reaching the end user.
+                            Equipment for cable processing, taping operations, and quality testing.
                         </p>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Ultrasonic Welding Machines -->
+                        <!-- Cable Processing Equipment -->
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
-                                    src="{{ asset('images/machines/welding-machines.jpg') }}"
-                                    alt="Ultrasonic Welding Machine"
+                                    src="{{ asset('images/machines/cable-processing.png') }}"
+                                    alt="Cable Processing Equipment"
                                     class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
-                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Ultrasonic Welding Machines</h3>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Cable Processing Equipment</h3>
                                 <p class="text-gray-600 mb-4">
-                                    Non-contact welding technology used to join materials through high-frequency sound waves, providing clean and precise welds without adhesives.
+                                    Various machines specialized in cutting, stripping, twisting, and terminating cables for a range of applications.
                                 </p>
                                 <div class="mt-6 space-y-3">
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>Clean, adhesive-free joining</span>
+                                        <span>Multi-core cable processing</span>
                                     </div>
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>High-frequency precision control</span>
+                                        <span>Cable harness assembly</span>
                                     </div>
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>Multiple material compatibility</span>
+                                        <span>Specialized connectorization</span>
                                     </div>
                                 </div>
-                                <button @click="showVideoModal = true; currentVideo = 'https://www.youtube.com/embed/example7'" class="mt-6 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center">
+                                <button @click="showVideoModal = true; currentVideo = 'https://www.youtube.com/embed/example4'" class="mt-6 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center">
                                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -453,38 +452,38 @@
                             </div>
                         </div>
 
-                        <!-- EOL Testing Machines -->
+                        <!-- End of Line Testing Machines -->
                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg">
                             <div class="h-64 overflow-hidden">
                                 <img
                                     src="{{ asset('images/machines/testing.png') }}"
-                                    alt="EOL Testing Machine"
+                                    alt="End of Line Testing Machine"
                                     class="w-full h-full object-fill"
                                 >
                             </div>
                             <div class="p-6">
-                                <h3 class="text-2xl font-bold text-gray-900 mb-2">End Of Line Testing Machines</h3>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">End of Line Testing Machines</h3>
                                 <p class="text-gray-600 mb-4">
-                                    Machines designed for final testing of assembled components, ensuring they meet all required standards before delivery.
+                                    Advanced testing equipment to ensure product quality and functionality before delivery.
                                 </p>
                                 <div class="mt-6 space-y-3">
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>Comprehensive electrical testing</span>
+                                        <span>Comprehensive quality testing</span>
                                     </div>
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>Automated quality assurance</span>
+                                        <span>Automated testing procedures</span>
                                     </div>
                                     <div class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-600 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                         </svg>
-                                        <span>Real-time test result reporting</span>
+                                        <span>Detailed quality reports</span>
                                     </div>
                                 </div>
                                 <button @click="showVideoModal = true; currentVideo = 'https://www.youtube.com/embed/example9'" class="mt-6 w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center">
@@ -568,7 +567,7 @@
                         </svg>
                         Contact Us
                     </a>
-                    <a href="tel:+123456789" class="inline-flex items-center px-6 py-3 bg-white text-blue-700 hover:bg-blue-50 text-lg font-medium rounded-md transition-all duration-300">
+                    <a href="tel:+40731375768" class="inline-flex items-center px-6 py-3 bg-white text-blue-700 hover:bg-blue-50 text-lg font-medium rounded-md transition-all duration-300">
                         <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                         </svg>

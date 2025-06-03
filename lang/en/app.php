@@ -40,6 +40,7 @@ return [
     'View Case Studies' => 'View Case Studies',
     'About Our Company' => 'About Our Company',
     'Contact Us' => 'Contact Us',
+    'Copșa Mică, Romania' => 'Aleea Salcâmilor nr. 18, Copșa Mică, Sibiu, 555400, România',
 
     // Footer
     'Connect with third-party tools that you\'re already using.' => 'Connect with third-party tools that you\'re already using.',
@@ -50,7 +51,6 @@ return [
     'Success stories and real-world applications of our solutions.' => 'Success stories and real-world applications of our solutions.',
     'Innovative cable assembly and system technology solutions for automotive, medical, and industrial applications.' => 'Innovative cable assembly and system technology solutions for automotive, medical, and industrial applications.',
     'Lösungen, die verbinden' => 'Solutions that connect',
-    'Copșa Mică, Romania' => 'Copșa Mică, Romania',
     'All rights reserved.' => 'All rights reserved.',
     'Privacy Policy' => 'Privacy Policy',
     'Terms of Service' => 'Terms of Service',

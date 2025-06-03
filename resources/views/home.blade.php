@@ -56,7 +56,7 @@
                     At Paderteg, we've built our reputation on delivering exceptional quality cable assemblies and wiring harnesses. With over 19 years of experience, we've become a trusted partner for companies requiring precision-engineered connection solutions.
                 </p>
                 <p class="text-lg text-gray-600 mb-8">
-                    Our ISO 9001:2015 certified manufacturing facilities in Romania ensure consistent quality and reliability across all our products.
+                    Our ISO 9001:2015 and IATF16949:2016 certified manufacturing facilities are equipped with advanced technologies and staffed by experienced professionals committed to excellence which ensure that every product leaving our lines reflects superior quality, traceability, and consistency.
                 </p>
                 <a href="{{ route('about') }}" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors">
                     Learn more about our story
@@ -270,6 +270,16 @@
                     <div class="text-center p-4">
                         <img src="{{ asset('images/axente_sever_IATF_16949.png') }}" alt="IATF 16949" class="h-16 mx-auto mb-3 grayscale hover:grayscale-0 transition-all duration-300">
                         <p class="text-gray-700 font-medium text-sm">IATF 16949:2016</p>
+                    </div>
+
+                    <div class="text-center p-4">
+                        <img src="{{ asset('images/copsa_mica_iso_45001.png') }}" alt="ISO 45001" class="h-16 mx-auto mb-3 grayscale hover:grayscale-0 transition-all duration-300">
+                        <p class="text-gray-700 font-medium text-sm">ISO 45001:2018</p>
+                    </div>
+
+                    <div class="text-center p-4">
+                        <img src="{{ asset('images/copsa_mica_iso_14001.png') }}" alt="ISO 14001" class="h-16 mx-auto mb-3 grayscale hover:grayscale-0 transition-all duration-300">
+                        <p class="text-gray-700 font-medium text-sm">ISO 14001:2015</p>
                     </div>
                 </div>
             </div>

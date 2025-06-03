@@ -75,8 +75,8 @@ Route::prefix('resources')->name('resources.')->group(function () {
 
 // Admin Routes
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
     })->name('dashboard');
 
     Route::resource('products', ProductController::class)->except(['show']);

@@ -143,6 +143,80 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- ISO 45001:2018 Certificate -->
+                        <div
+                            class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                            @click="showModal = true; currentCertificate = {
+                                title: 'ISO 45001:2018',
+                                image: '{{ asset('images/copsa_mica_iso_45001.png') }}',
+                                description: 'Occupational Health and Safety Management System certification ensuring workplace safety.',
+                                validUntil: '19.09.2025',
+                                download: '{{ route('pdf.download', [
+                                            'filename' => 'ISO_45001_Axente_Sever'
+                                        ]) }}'
+                             }">
+                            <div class="p-6">
+                                <div class="flex items-center justify-center mb-4 bg-blue-50 rounded-lg p-4">
+                                    <img src="{{ asset('images/copsa_mica_iso_45001.png') }}" alt="ISO 45001:2018"
+                                         class="h-20">
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">ISO 45001:2018</h3>
+                                <p class="text-gray-600 mb-4">Occupational Health and Safety Management System certification ensuring workplace safety.</p>
+
+                                <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                    <p class="text-sm text-gray-500">Valid until: 19.09.2025</p>
+                                    <a href="{{ route('pdf.download', [
+                                            'filename' => 'ISO_45001_Axente_Sever'
+                                        ]) }}"
+                                       class="text-blue-600 hover:text-blue-800 flex items-center" @click.stop>
+                                        <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                  d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                                  clip-rule="evenodd"></path>
+                                        </svg>
+                                        Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ISO 14001:2015 Certificate -->
+                        <div
+                            class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                            @click="showModal = true; currentCertificate = {
+                                title: 'ISO 14001:2015',
+                                image: '{{ asset('images/copsa_mica_iso_14001.png') }}',
+                                description: 'Environmental Management System certification demonstrating our commitment to environmental responsibility.',
+                                validUntil: '18.08.2027',
+                                download: '{{ route('pdf.download', [
+                                            'filename' => 'ISO_14001_Axente_Sever'
+                                        ]) }}'
+                             }">
+                            <div class="p-6">
+                                <div class="flex items-center justify-center mb-4 bg-blue-50 rounded-lg p-4">
+                                    <img src="{{ asset('images/copsa_mica_iso_14001.png') }}" alt="ISO 14001:2015"
+                                         class="h-20">
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">ISO 14001:2015</h3>
+                                <p class="text-gray-600 mb-4">Environmental Management System certification demonstrating our commitment to environmental responsibility.</p>
+
+                                <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                    <p class="text-sm text-gray-500">Valid until: 18.08.2027</p>
+                                    <a href="{{ route('pdf.download', [
+                                            'filename' => 'ISO_14001_Axente_Sever'
+                                        ]) }}"
+                                       class="text-blue-600 hover:text-blue-800 flex items-center" @click.stop>
+                                        <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd"
+                                                  d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                                  clip-rule="evenodd"></path>
+                                        </svg>
+                                        Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -383,3 +457,4 @@
         </div>
     </div>
 @endsection
+ 

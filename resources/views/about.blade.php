@@ -38,7 +38,7 @@
                             Founded in 2004, Paderteg has established itself as a leading manufacturer of high-quality cable assemblies and wiring harnesses. With our headquarters in Romania and operations in multiple European countries, we serve clients across various industries including automotive, medical, industrial, and renewable energy sectors.
                         </p>
                         <p class="text-lg text-gray-700">
-                            Our commitment to precision engineering, rigorous quality control, and customer-focused solutions has earned us a reputation for excellence in the field of cable manufacturing. With state-of-the-art facilities and a team of skilled engineers and technicians, we deliver products that meet the highest international standards.
+                            Our ISO 9001:2015 and IATF16949:2016 certified manufacturing facilities are equipped with advanced technologies and staffed by experienced professionals committed to excellence which ensure that every product leaving our lines reflects superior quality, traceability, and consistency.
                         </p>
                     </div>
                     <div class="rounded-lg overflow-hidden shadow-lg">
@@ -83,134 +83,6 @@
                         <p class="text-gray-700">
                             To be recognized globally as a leader in cable assembly solutions, setting industry standards for quality, innovation, and customer satisfaction. We aim to continuously expand our capabilities and market presence while maintaining our commitment to sustainability and ethical business practices.
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Values -->
-    <section class="py-16 sm:py-24 bg-white">
-        <div class="w-full px-4 sm:px-6 lg:px-8">
-            <div class="max-w-full mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-12 text-center">Our Core Values</h2>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Quality -->
-                    <div class="bg-gray-50 p-6 rounded-lg text-center">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Quality</h3>
-                        <p class="text-gray-700">
-                            We are committed to excellence in everything we do, from product design and manufacturing to customer service and business operations.
-                        </p>
-                    </div>
-
-                    <!-- Innovation -->
-                    <div class="bg-gray-50 p-6 rounded-lg text-center">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
-                        <p class="text-gray-700">
-                            We continuously seek new and better ways to serve our customers, embracing technological advancements and creative thinking.
-                        </p>
-                    </div>
-
-                    <!-- Integrity -->
-                    <div class="bg-gray-50 p-6 rounded-lg text-center">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
-                        <p class="text-gray-700">
-                            We conduct our business with honesty, transparency, and ethical standards, building trust with our customers, employees, and partners.
-                        </p>
-                    </div>
-
-                    <!-- Sustainability -->
-                    <div class="bg-gray-50 p-6 rounded-lg text-center">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Sustainability</h3>
-                        <p class="text-gray-700">
-                            We are dedicated to environmentally responsible practices and supporting sustainable development in our operations and products.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What We Do -->
-    <section class="py-16 sm:py-24 bg-gray-50">
-        <div class="w-full px-4 sm:px-6 lg:px-8">
-            <div class="max-w-full mx-auto">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">What We Do</h2>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="h-48 bg-blue-100">
-                            <img src="{{ asset('images/custom_cable_assemblies.png') }}" alt="Custom Cable Assemblies" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Custom Cable Assemblies</h3>
-                            <p class="text-gray-700 mb-4">
-                                We design and manufacture custom cable assemblies tailored to meet specific customer requirements across various industries, including automotive, medical, industrial, and energy.
-                            </p>
-                            <a href="{{ route('products.index') }}" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                                Learn More
-                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="h-48 bg-blue-100">
-                            <img src="{{ asset('images/wire_harnesses.png') }}" alt="Wiring Harnesses" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Wiring Harnesses</h3>
-                            <p class="text-gray-700 mb-4">
-                                Our comprehensive wiring harness solutions include design, prototype development, and production of complex harnesses for automotive and industrial applications.
-                            </p>
-                            <a href="{{ route('products.automotive') }}" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                                Learn More
-                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="h-48 bg-blue-100">
-                            <img src="{{ asset('images/crafting_quality_connections_since_2004.png') }}" alt="Testing & Quality Assurance" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">Testing & Quality Assurance</h3>
-                            <p class="text-gray-700 mb-4">
-                                We provide comprehensive testing services, including electrical testing, mechanical testing, and environmental testing to ensure the highest quality and reliability of our products.
-                            </p>
-                            <a href="{{ route('certificates') }}" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                                Learn More
-                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -520,6 +392,30 @@
                             <p class="text-gray-700 font-medium">IATF 16949:2016</p>
                             <p class="text-gray-600 text-sm mt-2">Automotive Quality Management</p>
                         </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 45001:2018',
+                                image: '{{ asset('images/copsa_mica_iso_45001.png') }}',
+                                description: 'Occupational Health and Safety Management System certification ensuring workplace safety.',
+                                validUntil: '19.09.2025'
+                             }">
+                            <img src="{{ asset('images/copsa_mica_iso_45001.png') }}" alt="ISO 45001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 45001:2018</p>
+                            <p class="text-gray-600 text-sm mt-2">Occupational Health & Safety</p>
+                        </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 14001:2015',
+                                image: '{{ asset('images/copsa_mica_iso_14001.png') }}',
+                                description: 'Environmental Management System certification demonstrating our commitment to environmental responsibility.',
+                                validUntil: '18.08.2027'
+                             }">
+                            <img src="{{ asset('images/copsa_mica_iso_14001.png') }}" alt="ISO 14001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 14001:2015</p>
+                            <p class="text-gray-600 text-sm mt-2">Environmental Management</p>
+                        </div>
                     </div>
                 </div>
 
@@ -553,18 +449,6 @@
 
                         <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
                              @click="showModal = true; currentCertificate = {
-                                title: 'ISO 14001:2015',
-                                image: '{{ asset('images/copsa_mica_iso_14001.png') }}',
-                                description: 'Environmental Management System certification demonstrating our commitment to environmental responsibility.',
-                                validUntil: '18.08.2027'
-                             }">
-                            <img src="{{ asset('images/copsa_mica_iso_14001.png') }}" alt="ISO 14001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
-                            <p class="text-gray-700 font-medium">ISO 14001:2015</p>
-                            <p class="text-gray-600 text-sm mt-2">Environmental Management</p>
-                        </div>
-
-                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
-                             @click="showModal = true; currentCertificate = {
                                 title: 'ISO 45001:2018',
                                 image: '{{ asset('images/copsa_mica_iso_45001.png') }}',
                                 description: 'Occupational Health and Safety Management System certification ensuring workplace safety.',
@@ -573,6 +457,18 @@
                             <img src="{{ asset('images/copsa_mica_iso_45001.png') }}" alt="ISO 45001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
                             <p class="text-gray-700 font-medium">ISO 45001:2018</p>
                             <p class="text-gray-600 text-sm mt-2">Occupational Health & Safety</p>
+                        </div>
+
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                             @click="showModal = true; currentCertificate = {
+                                title: 'ISO 14001:2015',
+                                image: '{{ asset('images/copsa_mica_iso_14001.png') }}',
+                                description: 'Environmental Management System certification demonstrating our commitment to environmental responsibility.',
+                                validUntil: '18.08.2027'
+                             }">
+                            <img src="{{ asset('images/copsa_mica_iso_14001.png') }}" alt="ISO 14001" class="h-20 mx-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300">
+                            <p class="text-gray-700 font-medium">ISO 14001:2015</p>
+                            <p class="text-gray-600 text-sm mt-2">Environmental Management</p>
                         </div>
                     </div>
                 </div>
@@ -628,252 +524,6 @@
                         <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                     </svg>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Meet the Team -->
-    <section class="py-24 bg-white scroll-mt-16" id="team-section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in-section">
-                <span class="inline-block px-3 py-1 text-sm font-semibold bg-blue-100 text-blue-800 rounded-full mb-6">Our People</span>
-                <h2 class="text-4xl font-bold text-gray-900 mb-6">Meet the Team</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Our success is driven by a dedicated team of experts committed to excellence in every aspect of our business.
-                </p>
-            </div>
-
-            <!-- Team Group Photo -->
-            <div class="mb-16 fade-in-section">
-                <div class="relative overflow-hidden rounded-3xl shadow-2xl">
-                    <img
-                        src="{{ asset('images/management_team.png') }}"
-                        alt="Paderteg Management Team"
-                        class="w-full h-auto object-cover"
-                        onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'"
-                    >
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 w-full p-8 text-white">
-                        <h3 class="text-2xl font-bold mb-2">Management Team</h3>
-                        <p class="text-white/80">The leadership driving Paderteg's innovation and growth</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- New Team Slider -->
-            <div class="team-members-container fade-in-section">
-                <!-- Tabs for team members -->
-                <div class="relative" x-data="{ activeTab: 'management' }">
-                    <!-- Tab navigation -->
-                    <div class="flex justify-center mb-12 border-b border-gray-200">
-                        <button
-                            @click="activeTab = 'management'"
-                            :class="activeTab === 'management' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'"
-                            class="px-6 py-3 text-sm font-medium transition-colors duration-200 mx-2"
-                        >
-                            Leadership Team
-                        </button>
-                        <button
-                            @click="activeTab = 'operations'"
-                            :class="activeTab === 'operations' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'"
-                            class="px-6 py-3 text-sm font-medium transition-colors duration-200 mx-2"
-                        >
-                            Operations Team
-                        </button>
-                        <button
-                            @click="activeTab = 'support'"
-                            :class="activeTab === 'support' ? 'border-b-2 border-blue-600 text-blue-600' : 'text-gray-500 hover:text-gray-700'"
-                            class="px-6 py-3 text-sm font-medium transition-colors duration-200 mx-2"
-                        >
-                            Support Team
-                        </button>
-                    </div>
-
-                    <!-- Management Team -->
-                    <div x-show="activeTab === 'management'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Team Member 1 -->
-                        <div class="team-member-card group">
-                            <div class="relative overflow-hidden rounded-2xl">
-                                <img
-                                    src="{{ asset('images/Ioan-Marius Milonean.jpeg') }}"
-                                    alt="Ioan-Marius Milonean"
-                                    class="w-full aspect-square object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                                >
-                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div class="p-6">
-                                        <p class="text-white text-sm leading-relaxed">
-                                            With over 20 years of experience in the cable manufacturing industry, Marius leads our company with vision and expertise.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 text-center">
-                                <h3 class="text-xl font-bold text-gray-900">Ioan-Marius Milonean</h3>
-                                <p class="text-blue-600 font-medium">Administrator/Owner</p>
-                            </div>
-                        </div>
-
-                        <!-- Team Member 2 -->
-                        <div class="team-member-card group">
-                            <div class="relative overflow-hidden rounded-2xl">
-                                <img
-                                    src="{{ asset('images/Anca Ganfalean.jpeg') }}"
-                                    alt="Anca Ganfalean"
-                                    class="w-full aspect-square object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                                >
-                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div class="p-6">
-                                        <p class="text-white text-sm leading-relaxed">
-                                            Anca manages our financial operations and human resources, ensuring smooth business operations and employee satisfaction.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 text-center">
-                                <h3 class="text-xl font-bold text-gray-900">Anca Ganfalean</h3>
-                                <p class="text-blue-600 font-medium">Finance & HR</p>
-                            </div>
-                        </div>
-
-                        <!-- Team Member 3 -->
-                        <div class="team-member-card group">
-                            <div class="relative overflow-hidden rounded-2xl">
-                                <img
-                                    src="{{ asset('images/Cristian Dura.jpeg') }}"
-                                    alt="Cristian Dura"
-                                    class="w-full aspect-square object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                                >
-                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div class="p-6">
-                                        <p class="text-white text-sm leading-relaxed">
-                                            Cristian leads our sales and engineering teams, ensuring our solutions meet client needs and industry standards.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 text-center">
-                                <h3 class="text-xl font-bold text-gray-900">Cristian Dura</h3>
-                                <p class="text-blue-600 font-medium">Sales & Engineering</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Operations Team -->
-                    <div x-show="activeTab === 'operations'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Team Member 4 -->
-                        <div class="team-member-card group">
-                            <div class="relative overflow-hidden rounded-2xl">
-                                <img
-                                    src="{{ asset('images/Dana Stanciu.jpeg') }}"
-                                    alt="Dana Stanciu"
-                                    class="w-full aspect-square object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                                >
-                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div class="p-6">
-                                        <p class="text-white text-sm leading-relaxed">
-                                            Dana oversees our quality management and environmental health & safety programs, ensuring compliance and excellence.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 text-center">
-                                <h3 class="text-xl font-bold text-gray-900">Dana Stanciu</h3>
-                                <p class="text-blue-600 font-medium">Quality & EHS</p>
-                            </div>
-                        </div>
-
-                        <!-- Team Member 5 -->
-                        <div class="team-member-card group">
-                            <div class="relative overflow-hidden rounded-2xl">
-                                <img
-                                    src="{{ asset('images/Cosmin Necsuleu.jpeg') }}"
-                                    alt="Cosmin Necsuleu"
-                                    class="w-full aspect-square object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                                >
-                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div class="p-6">
-                                        <p class="text-white text-sm leading-relaxed">
-                                            Cosmin manages our production processes and technical operations, ensuring efficient and high-quality manufacturing.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 text-center">
-                                <h3 class="text-xl font-bold text-gray-900">Cosmin Necsuleu</h3>
-                                <p class="text-blue-600 font-medium">Production & Technic</p>
-                            </div>
-                        </div>
-
-                        <!-- Team Member 6 -->
-                        <div class="team-member-card group">
-                            <div class="relative overflow-hidden rounded-2xl">
-                                <img
-                                    src="{{ asset('images/Ramona Barac.jpeg') }}"
-                                    alt="Ramona Barac"
-                                    class="w-full aspect-square object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                                >
-                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div class="p-6">
-                                        <p class="text-white text-sm leading-relaxed">
-                                            Ramona oversees our logistics operations, ensuring timely delivery and efficient supply chain management.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 text-center">
-                                <h3 class="text-xl font-bold text-gray-900">Ramona Barac</h3>
-                                <p class="text-blue-600 font-medium">Logistics</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Support Team -->
-                    <div x-show="activeTab === 'support'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Team Member 7 -->
-                        <div class="team-member-card group">
-                            <div class="relative overflow-hidden rounded-2xl">
-                                <img
-                                    src="{{ asset('images/Carmen Papara.jpeg') }}"
-                                    alt="Carmen Papara"
-                                    class="w-full aspect-square object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                                >
-                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div class="p-6">
-                                        <p class="text-white text-sm leading-relaxed">
-                                            Carmen manages our purchasing operations, ensuring we source high-quality materials at competitive prices.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 text-center">
-                                <h3 class="text-xl font-bold text-gray-900">Carmen Papara</h3>
-                                <p class="text-blue-600 font-medium">Purchasing</p>
-                            </div>
-                        </div>
-
-                        <!-- Team Member 8 -->
-                        <div class="team-member-card group">
-                            <div class="relative overflow-hidden rounded-2xl">
-                                <img
-                                    src="{{ asset('images/Gheorghe Oancea.jpeg') }}"
-                                    alt="Gheorghe Oancea"
-                                    class="w-full aspect-square object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                                >
-                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <div class="p-6">
-                                        <p class="text-white text-sm leading-relaxed">
-                                            Gheorghe manages our IT infrastructure and systems, ensuring smooth digital operations and security.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-4 text-center">
-                                <h3 class="text-xl font-bold text-gray-900">Gheorghe Oancea</h3>
-                                <p class="text-blue-600 font-medium">IT</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -973,26 +623,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 sm:py-32 bg-blue-900 text-white">
-        <div class="w-full px-4 sm:px-6 lg:px-8">
-            <div class="max-w-full mx-auto text-center">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
-                <p class="text-xl text-blue-100 mb-12 max-w-full mx-auto">
-                    Partner with Paderteg for high-quality cable assembly solutions tailored to your specific requirements.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="{{ route('contact') }}" class="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-lg font-medium">
-                        Contact Us
-                    </a>
-                    <a href="{{ route('products.index') }}" class="bg-transparent border border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-medium transition-colors">
-                        Explore Our Products
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     @push('scripts')
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1065,3 +695,4 @@
     </script>
     @endpush
 @endsection
+ 
