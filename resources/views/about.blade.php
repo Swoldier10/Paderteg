@@ -3,26 +3,36 @@
 @section('title', 'About Us - Paderteg')
 
 @section('content')
-    <!-- Hero Section with Retro Grid -->
-    <section class="relative h-[60vh] min-h-[500px] bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white overflow-hidden">
-        <!-- Retro Sun -->
-        <div class="retro-sun"></div>
-
-        <!-- Retro Grid -->
-        <div class="retro-grid"></div>
-
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] min-h-[500px] w-full flex flex-col justify-center items-center p-6 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white overflow-hidden">
         <!-- Content -->
-        <div class="relative z-10 flex flex-col items-center justify-center h-full w-full px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-200 bg-clip-text text-transparent">About Paderteg</h1>
-            <p class="text-xl sm:text-2xl text-blue-100 max-w-full mx-auto">Precision, Quality, and Reliability in Every Cable Assembly</p>
+        <div class="text-center space-y-4 fade-in-hero">
+            <!-- Main Heading -->
+            <h1 class="text-3xl lg:text-5xl font-bold text-white mb-6">
+                Paderteg Kabeltechnik
+            </h1>
+            
+            <!-- Subheading -->
+            <h2 class="text-xl lg:text-2xl font-normal text-white mb-8">
+                Excellence in Cable Assembly Solutions
+            </h2>
+            
+            <!-- Attribute List -->
+            <div class="text-lg text-white mb-12">
+                <span>Precision</span>
+                <span class="mx-2">•</span>
+                <span>Quality</span>
+                <span class="mx-2">•</span>
+                <span>Reliability</span>
+            </div>
+        </div>
 
-            <!-- Scroll Indicator -->
-            <a href="#company-overview" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white hover:text-blue-300 transition-colors">
-                <span class="text-sm mb-2">Scroll Down</span>
-                <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </a>
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white">
+            <span class="text-sm mb-2">Scroll Down</span>
+            <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
         </div>
     </section>
 
@@ -660,6 +670,54 @@
         .fade-in-section.fade-in {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        /* Hero section fade-in animation */
+        .fade-in-hero {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInHero 1.5s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeInHero {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced text shadow for better readability */
+        .fade-in-hero h1,
+        .fade-in-hero h2,
+        .fade-in-hero div {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive typography adjustments */
+        @media (max-width: 768px) {
+            .fade-in-hero h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .fade-in-hero h2 {
+                font-size: 1.25rem;
+            }
+            
+            .fade-in-hero div {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .fade-in-hero h1 {
+                font-size: 3.5rem;
+            }
+            
+            .fade-in-hero h2 {
+                font-size: 1.75rem;
+            }
         }
 
         .team-member-card {

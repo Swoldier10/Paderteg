@@ -4,32 +4,46 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="relative h-[600px] flex items-center overflow-hidden" id="hero-section">
-    <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80 mix-blend-multiply w-full">
-            <div style="position:relative; width:100%; height:100%;"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/vxxoc6?autoplay=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+<section class="relative w-full flex items-center overflow-hidden" id="hero-section">
+    <!-- Video Background Container -->
+    <div class="relative w-full z-0">
+        <!-- Video iframe with full width and auto height -->
+        <div class="relative w-full" style="aspect-ratio: 16/9;">
+            <iframe 
+                src="https://streamable.com/e/vxxoc6?autoplay=1&muted=1" 
+                frameborder="0" 
+                allowfullscreen 
+                allow="autoplay; fullscreen"
+                class="absolute inset-0 w-full h-full"
+                loading="lazy">
+            </iframe>
+            <!-- Lighter overlay for better video visibility -->
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-blue-800/30 to-blue-900/40"></div>
+            <div class="absolute inset-0 bg-black/10"></div>
         </div>
-        <div class="absolute inset-0 bg-blue-800 bg-cover bg-center bg-opacity-35"></div>
     </div>
-    <div class="relative z-10 max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-24 text-white">
-        <div class="hero-content opacity-0 transform translate-y-8 transition-all duration-1000 ease-out">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-                Custom Cable Assemblies Built for Reliability & Performance
-            </h1>
-            <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl">
-                Providing high-quality, precision-engineered cable solutions for automotive, aerospace, medical, and industrial applications.
-            </p>
-            <div class="flex flex-wrap gap-4">
-                <a href="{{ route('contact') }}" class="px-8 py-4 bg-white text-blue-900 rounded-full font-medium transition-all hover:bg-blue-50 hover:shadow-lg">
-                    Request a Quote
-                </a>
-                <a href="{{ route('products.index') }}" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-medium transition-all hover:bg-white/10">
-                    View Products
-                </a>
+    <!-- Content overlay positioned absolutely over the video -->
+    <div class="absolute inset-0 z-10 flex items-center justify-center text-white">
+        <div class="text-center px-4 sm:px-6 lg:px-8">
+            <div class="hero-content opacity-0 transform translate-y-8 transition-all duration-1000 ease-out">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight text-white">
+                    Custom Cable Assemblies Built for Reliability & Performance
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl text-white mb-10 max-w-4xl mx-auto">
+                    Providing high-quality, precision-engineered cable solutions for automotive, aerospace, medical, and industrial applications.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="{{ route('contact') }}" class="px-8 py-4 bg-white text-blue-900 rounded-full font-medium transition-all hover:bg-blue-50 hover:shadow-lg">
+                        Request a Quote
+                    </a>
+                    <a href="{{ route('products.index') }}" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-medium transition-all hover:bg-white/10">
+                        View Products
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
@@ -374,6 +388,16 @@
     .fade-in-section.fade-in {
         opacity: 1;
         transform: translateY(0);
+    }
+
+    /* Video styling */
+    #hero-section iframe {
+        pointer-events: none;
+    }
+
+    /* Ensure text is readable over the video */
+    #hero-section .hero-content {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
 </style>
 @endpush
