@@ -1,2 +1,25 @@
+# robots.txt for Paderteg Kabeltechnik SRL
+# Asamblare cabluri și tehnologia cablurilor - România
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://paderteg.ro/sitemap.xml
+
+# Block admin areas
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /register/
+
+# Allow important pages for SEO
+Allow: /
+Allow: /about
+Allow: /products
+Allow: /certificates
+Allow: /machines
+Allow: /contact
+
+# Performance optimizations
+Crawl-delay: 1

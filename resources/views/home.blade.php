@@ -1,6 +1,18 @@
 @extends('layouts.main')
 
-@section('title', 'Home')
+{{-- SEO Meta Tags for Home Page --}}
+@section('seo_title', 'Paderteg Kabeltechnik SRL | Asamblare Cabluri România | Copșa Mică, Sibiu')
+@section('seo_description', 'Paderteg Kabeltechnik SRL - Specializați în asamblare cabluri și tehnologia cablurilor din România. Soluții industriale de calitate superioară în Copșa Mică, Sibiu.')
+@section('seo_keywords', 'paderteg kabeltechnik, asamblare cabluri romania, tehnologia cablurilor, soluții industriale, copșa mică sibiu, cabluri automotive, cabluri medicale, cabluri industriale')
+
+{{-- Open Graph Meta Tags --}}
+@section('og_title', 'Paderteg Kabeltechnik SRL - Asamblare Cabluri România')
+@section('og_description', 'Specializați în asamblare cabluri și tehnologia cablurilor din România. Soluții industriale de calitate superioară.')
+@section('og_image', asset('images/crafting_quality_connections_since_2004.png'))
+
+{{-- Twitter Card Meta Tags --}}
+@section('twitter_title', 'Paderteg Kabeltechnik SRL - Asamblare Cabluri')
+@section('twitter_description', 'Specializați în tehnologia cablurilor din România - Calitate superioară din 2004.')
 
 @section('content')
 <!-- Hero Section -->
@@ -11,10 +23,10 @@
         <div class="relative w-full" style="aspect-ratio: 16/9;">
             <iframe 
                 src="https://streamable.com/e/vxxoc6?autoplay=1&muted=1" 
-                frameborder="0" 
                 allowfullscreen 
                 allow="autoplay; fullscreen"
-                class="absolute inset-0 w-full h-full"
+                title="Video prezentare Paderteg Kabeltechnik - Asamblare cabluri și tehnologia cablurilor"
+                class="absolute inset-0 w-full h-full border-0"
                 loading="lazy">
             </iframe>
             <!-- Lighter overlay for better video visibility -->

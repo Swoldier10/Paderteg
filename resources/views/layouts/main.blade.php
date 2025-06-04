@@ -1,14 +1,99 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
+<html lang="ro" class="h-full">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Paderteg</title>
-    <meta name="description" content="Custom Cable Assemblies Built for Reliability & Performance">
-    <meta name="keywords" content="cable, assembly, automotive, medical, quality, innovation, integrity, sustainability, industry, energy">
-    <meta name="author" content="Paderteg">
+    <!-- SEO Meta Tags -->
+    <title>@yield('seo_title', 'Paderteg Kabeltechnik SRL - Asamblare Cabluri | Copșa Mică, Sibiu, România')</title>
+    <meta name="description" content="@yield('seo_description', 'Paderteg Kabeltechnik SRL - Specializați în tehnologia cablurilor, asamblare cabluri și soluții industriale în Copșa Mică, Sibiu, România. Calitate superioară și servicii profesionale.')">
+    <meta name="keywords" content="@yield('seo_keywords', 'paderteg, kabeltechnik, asamblare cabluri, tehnologia cablurilor, soluții industriale, copșa mică, sibiu, românia, cable assembly, industrial cabling, automotive cables')">
+    <meta name="author" content="Paderteg Kabeltechnik SRL">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="@yield('og_title', 'Paderteg Kabeltechnik SRL - Asamblare Cabluri | Copșa Mică, Sibiu')">
+    <meta property="og:description" content="@yield('og_description', 'Paderteg Kabeltechnik SRL - Specializați în tehnologia cablurilor, asamblare cabluri și soluții industriale în România.')">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Paderteg Kabeltechnik SRL">
+    <meta property="og:image" content="@yield('og_image', asset('images/logo.jpeg'))">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ro_RO">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Paderteg Kabeltechnik SRL - Asamblare Cabluri')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Specializați în tehnologia cablurilor și soluții industriale în România.')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('images/logo.jpeg'))">
+
+    <!-- Structured Data - LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Paderteg Kabeltechnik SRL",
+        "description": "Specializați în tehnologia cablurilor, asamblare cabluri și soluții industriale de înaltă calitate în România.",
+        "url": "{{ config('app.url') }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Copșa Mică",
+            "addressLocality": "Copșa Mică",
+            "addressRegion": "Sibiu",
+            "postalCode": "",
+            "addressCountry": "RO"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "46.1017",
+            "longitude": "24.2214"
+        },
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "priceRange": "$$",
+        "image": "{{ asset('images/logo.jpeg') }}",
+        "serviceArea": {
+            "@type": "Place",
+            "name": "România"
+        },
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "name": "Asamblare Cabluri",
+                "description": "Servicii profesionale de asamblare cabluri pentru industria automotive și industrială"
+            },
+            {
+                "@type": "Offer", 
+                "name": "Tehnologia Cablurilor",
+                "description": "Soluții avansate în tehnologia cablurilor pentru aplicații industriale"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Paderteg Kabeltechnik SRL",
+        "url": "{{ config('app.url') }}",
+        "logo": "{{ asset('images/logo.jpeg') }}",
+        "description": "Companie românească specializată în tehnologia cablurilor, asamblare cabluri și soluții industriale de înaltă calitate.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Copșa Mică",
+            "addressRegion": "Sibiu", 
+            "addressCountry": "RO"
+        },
+        "sameAs": [
+            "@yield('social_facebook', '')",
+            "@yield('social_linkedin', '')"
+        ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">

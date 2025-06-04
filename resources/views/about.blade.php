@@ -1,6 +1,18 @@
 @extends('layouts.main')
 
-@section('title', 'About Us - Paderteg')
+{{-- SEO Meta Tags for About Page --}}
+@section('seo_title', 'Despre Paderteg Kabeltechnik SRL | Asamblare Cabluri | Copșa Mică, Sibiu')
+@section('seo_description', 'Despre Paderteg Kabeltechnik SRL - Companie românească specializată în tehnologia cablurilor și asamblare cabluri din Copșa Mică, Sibiu. Calitate superioară din 2004.')
+@section('seo_keywords', 'despre paderteg, kabeltechnik romania, istorie companie, asamblare cabluri copșa mică, tehnologia cablurilor sibiu, certificări iso, servicii industriale')
+
+{{-- Open Graph Meta Tags --}}
+@section('og_title', 'Despre Paderteg Kabeltechnik SRL | Asamblare Cabluri România')
+@section('og_description', 'Aflați despre Paderteg Kabeltechnik SRL - companie românească cu experiență în tehnologia cablurilor din Copșa Mică, Sibiu.')
+@section('og_image', asset('images/since_20004.png'))
+
+{{-- Twitter Card Meta Tags --}}
+@section('twitter_title', 'Despre Paderteg Kabeltechnik SRL')
+@section('twitter_description', 'Companie românească specializată în tehnologia cablurilor din Copșa Mică, Sibiu.')
 
 @section('content')
     <!-- Hero Section -->
@@ -52,7 +64,7 @@
                         </p>
                     </div>
                     <div class="rounded-lg overflow-hidden shadow-lg">
-                        <img src="{{ asset('images/since_20004.png') }}" alt="Paderteg Facility" class="w-full h-auto">
+                        <img src="{{ asset('images/since_20004.png') }}" alt="Paderteg Kabeltechnik SRL - Facilitățile companiei din Copșa Mică, Sibiu - Tehnologia cablurilor din 2004" class="w-full h-auto">
                     </div>
                 </div>
             </div>
@@ -558,6 +570,7 @@
                             style="border:0"
                             loading="lazy"
                             allowfullscreen
+                            title="Locația Paderteg Kabeltechnik - Axente Sever, Sibiu, România"
                             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Axente+Sever,Romania">
                         </iframe>
                     </div>
@@ -595,6 +608,7 @@
                             style="border:0"
                             loading="lazy"
                             allowfullscreen
+                            title="Locația Paderteg Kabeltechnik - Copșa Mică, Sibiu, România"
                             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Copsa+Mica,Romania">
                         </iframe>
                     </div>
