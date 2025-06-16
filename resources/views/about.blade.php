@@ -16,9 +16,18 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section class="relative h-[70vh] min-h-[500px] w-full flex flex-col justify-center items-center p-6 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white overflow-hidden">
+    <section class="relative h-[70vh] min-h-[500px] w-full flex flex-col justify-center items-center p-6 text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="{{ asset('images/about-page-header-section.png') }}" 
+                 alt="About Paderteg - Header Background" 
+                 class="w-full h-full object-cover">
+            <!-- Gray Overlay -->
+            <div class="absolute inset-0 bg-gray-900/60"></div>
+        </div>
+        
         <!-- Content -->
-        <div class="text-center space-y-4 fade-in-hero">
+        <div class="text-center space-y-4 fade-in-hero relative z-10">
             <!-- Main Heading -->
             <h1 class="text-3xl lg:text-5xl font-bold text-white mb-6">
                 Paderteg Kabeltechnik
@@ -40,7 +49,7 @@
         </div>
 
         <!-- Scroll Down Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white">
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white z-10">
             <span class="text-sm mb-2">Scroll Down</span>
             <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -341,7 +350,7 @@
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-3">Global Partnership</h3>
                     <p class="text-gray-600">
-                        As part of the CIS electronic Group, we leverage international resources and expertise to deliver world-class solutions to clients worldwide.
+                        Through strategic global partnerships, we bring together organizations, innovators, and communities from around the world to drive progress, share knowledge, and achieve common goals.
                     </p>
                 </div>
             </div>
