@@ -49,8 +49,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-3">Biocompatible Materials</h3>
-                        <p class="text-gray-600">Medical-grade materials suitable for direct and indirect patient contact applications.</p>
+                        <h3 class="text-xl font-semibold mb-3">More Coming Soon</h3>
+                        <p class="text-gray-600">More coming soon...</p>
                     </div>
                     <div class="p-6 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -58,8 +58,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-3">Sterilization Compatible</h3>
-                        <p class="text-gray-600">Cables designed to withstand multiple sterilization methods, including autoclave, EtO, and gamma radiation.</p>
+                        <h3 class="text-xl font-semibold mb-3">More Coming Soon</h3>
+                        <p class="text-gray-600">More coming soon...</p>
                     </div>
                 </div>
                 <a href="{{ route('about') }}" class="inline-flex items-center text-blue-600 font-medium mt-8 hover:text-blue-800 transition-colors duration-300">
